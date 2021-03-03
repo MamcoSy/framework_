@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":286:{a:2:{s:7:"defects";a:3:{s:23:"RouteTest::testNewRoute";i:4;s:27:"RouteTest::testGetRouteName";i:4;s:31:"RouteTest::testGetRouteCallback";i:3;}s:5:"times";a:3:{s:23:"RouteTest::testNewRoute";d:0.024;s:27:"RouteTest::testGetRouteName";d:0.002;s:31:"RouteTest::testGetRouteCallback";d:0;}}}

@@ -1,5 +1,5 @@
 {
-  "name": "mamadou/framework_",
+  "name": "mamadou/framework",
   "description": "A simple php framework for building web application",
   "type": "library",
   "license": "MIT",
@@ -26,5 +26,9 @@
     "psr-4": {
       "Hellium\\Tests\\": "./tests/"
     }
+  },
+  "require-dev": {
+    "spatie/phpunit-watcher": "^1.23",
+    "phpunit/phpunit": "^9.5"
   }
 }
