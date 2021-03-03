@@ -1,0 +1,30 @@
+{
+  "name": "mamadou/framework_",
+  "description": "A simple php framework for building web application",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "MamcoSy",
+      "email": "mamco.aly.sy@gmail.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Th3-attacker",
+      "email": "haje.malik5@gmail.com",
+      "role": "Collaborator"
+    }
+  ],
+  "minimum-stability": "alpha",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Hellium\\": "./src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Hellium\\Tests\\": "./tests/"
+    }
+  }
+}
