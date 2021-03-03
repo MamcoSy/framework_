@@ -1,6 +1,6 @@
 <?php
 
-declare (strict_types = 1);
+declare ( strict_types = 1 );
 
 namespace Hellium\Router;
 
@@ -13,12 +13,13 @@ class Route implements RouteInterface
     /**
      * @param string $name
      */
-    public function __construct(string $path = '/', ?array $callback = null, string $name = '')
+    public function __construct( string $path = '/', ?array $callback = null, string $name = '' )
     {
-        $this->name     = $name;
-        $this->path     = '/' . trim($path, '/');
-        $this->callback = $callback;
-
+        $this
+            ->setPath( $path )
+            ->setCallback( $callback )
+            ->setName( $name )
+        ;
     }
 
     /**
@@ -37,26 +38,41 @@ class Route implements RouteInterface
         return $this->callback;
     }
 
+    /**
+     * @return mixed
+     */
     public function getPath(): string
     {
         return $this->path;
     }
 
-    public function setPath(string $path): self
+    /**
+     * @param  string  $path
+     * @return mixed
+     */
+    public function setPath( string $path ): self
     {
-        $this->path = $path;
+        $this->path = '/' . trim( $path, '/' );
 
         return $this;
     }
 
-    public function setName(string $name): self
+    /**
+     * @param  string  $name
+     * @return mixed
+     */
+    public function setName( string $name ): self
     {
         $this->name = $name;
 
         return $this;
     }
 
-    public function setCallback(array $callback): self
+    /**
+     * @param  array   $callback
+     * @return mixed
+     */
+    public function setCallback( ?array $callback ): self
     {
         $this->callback = $callback;
 
